@@ -1,0 +1,24 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="#35ffffff">
+
+    <fragment xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="in.jhalwabois.geogpassist.MapsActivity" />
+
+    <LinearLayout
+        android:id="@+id/whiteOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/shadow_gradient"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="invisible" />
+
+</FrameLayout>
+
