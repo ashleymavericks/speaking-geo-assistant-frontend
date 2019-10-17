@@ -10,7 +10,7 @@ fun getResponseForQuery(query: String, currentLanguage: String) =
                 .addQueryParameter("q", query)
                 .setPriority(Priority.HIGH)
                 .build()*/
-        AndroidNetworking.get("http://10.215.99.159:3000/nlp")
+        AndroidNetworking.get("http://10.215.99.159:3000/nlp") //provide network IP address and Port no. on which mongod server is running
                 .addQueryParameter("q", query)
                 .addQueryParameter("lang", currentLanguage)
                 .setPriority(Priority.HIGH)
